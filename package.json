@@ -1,0 +1,12 @@
+{
+  "name": "vite-vue3-crx",
+  "version": "0.0.1",
+  "private": true,
+  "description": "[description]",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["vite", "vue3", "chrome extension"],
+  "author": "Leo Hunter",
+  "license": "ISC"
+}
