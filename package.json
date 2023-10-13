@@ -4,7 +4,7 @@
   "private": true,
   "description": "[description]",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite"
   },
   "keywords": [
     "vite",
@@ -14,6 +14,7 @@
   "author": "Leo Hunter",
   "license": "ISC",
   "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
     "vue": "^3.3.4"
