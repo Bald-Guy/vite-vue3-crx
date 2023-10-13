@@ -6,7 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["vite", "vue3", "chrome extension"],
+  "keywords": [
+    "vite",
+    "vue3",
+    "chrome extension"
+  ],
   "author": "Leo Hunter",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
