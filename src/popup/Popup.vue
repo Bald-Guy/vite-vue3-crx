@@ -1,6 +1,6 @@
 <template>
     <div>
-        你好
+        Popup Page
     </div>
 </template>
 
