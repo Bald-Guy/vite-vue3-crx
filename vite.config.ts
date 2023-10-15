@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 import { isDev, port, r } from './scripts/utils'
 import packageJson from './package.json'
 
@@ -29,7 +31,12 @@ export const sharedConfig: UserConfig = {
     }),
 
     Components({
+      resolvers: [IconsResolver({ prefix: '' })],
       dts: r('src/components.d.ts'),
+    }),
+
+    Icons({
+      autoInstall: true,
     }),
 
     // rewrite assets to use relative path
