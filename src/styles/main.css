@@ -1,11 +1,8 @@
-html,
-body,
-#app {
-  margin: 0;
-  padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* .btn {
+.btn {
   @apply px-4 py-1 rounded inline-block
     bg-teal-600 text-white cursor-pointer
     hover:bg-teal-700
@@ -17,4 +14,4 @@ body,
     opacity-75 transition duration-200 ease-in-out
     hover:opacity-100 hover:text-teal-600;
   font-size: 0.9em;
-} */
+}
