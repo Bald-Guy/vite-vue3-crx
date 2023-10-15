@@ -59,7 +59,8 @@
     "unplugin-icons": "^0.17.0",
     "unplugin-vue-components": "^0.25.2",
     "vite": "^4.4.11",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "web-ext": "^7.8.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
