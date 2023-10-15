@@ -8,10 +8,9 @@ import { setupApp } from '~/logic/common-setup'
   console.info('[vitesse-webext] Hello world from content script')
 
   // communication example: send previous tab title from background page
-  chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if (message.type === 'tab-prev') {
+  chrome.runtime.onMessage.addListener((message, _sender, _sendResponse) => {
+    if (message.type === 'tab-prev')
       console.log(`[vitesse-webext] Navigate from page "${message.data.title}"`)
-    }
   })
 
   // mount component to context window

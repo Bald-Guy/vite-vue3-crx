@@ -1,9 +1,17 @@
 {
   "name": "vite-vue3-crx",
   "displayName": "Vite Vue3 CRX",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "description": "[description]",
+  "author": "Leo Hunter",
+  "license": "ISC",
+  "keywords": [
+    "vite",
+    "vue3",
+    "chrome extension"
+  ],
   "scripts": {
     "dev": "npm run clear && cross-env NODE_ENV=development run-p dev:*",
     "dev:prepare": "esno scripts/prepare.ts",
@@ -12,15 +20,9 @@
     "dev:js": "npm run build:js -- --mode development",
     "build:background": "vite build --config vite.config.background.ts",
     "build:js": "vite build --config vite.config.content.ts",
-    "clear": "rimraf --glob extension/dist extension/manifest.json extension.*"
+    "clear": "rimraf --glob extension/dist extension/manifest.json extension.*",
+    "lint": "eslint --cache ."
   },
-  "keywords": [
-    "vite",
-    "vue3",
-    "chrome extension"
-  ],
-  "author": "Leo Hunter",
-  "license": "ISC",
   "devDependencies": {
     "@types/chrome": "^0.0.246",
     "@types/fs-extra": "^11.0.2",

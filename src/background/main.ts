@@ -22,9 +22,8 @@ chrome.tabs.onActivated.addListener(({ tabId }) => {
   }
 
   chrome.tabs.get(previousTabId, (tab) => {
-    if (chrome.runtime.lastError) {
+    if (chrome.runtime.lastError)
       return
-    }
 
     previousTabId = tabId
 
