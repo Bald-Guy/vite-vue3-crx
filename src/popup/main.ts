@@ -7,4 +7,4 @@ const app = createApp(App)
 setupApp(app)
 app.mount('#app')
 
-console.log('popup/main.ts')
+console.log('popup/main.ts')// sdfs

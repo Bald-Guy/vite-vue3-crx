@@ -24,12 +24,14 @@
     "lint": "eslint --cache ."
   },
   "devDependencies": {
+    "@antfu/eslint-config": "1.0.0-beta.27",
     "@types/chrome": "^0.0.246",
     "@types/fs-extra": "^11.0.2",
     "@types/node": "^20.8.6",
     "@vitejs/plugin-vue": "^4.4.0",
     "chokidar": "^3.5.3",
     "cross-env": "^7.0.3",
+    "eslint": "^8.51.0",
     "esno": "^0.17.0",
     "fs-extra": "^11.1.1",
     "kolorist": "^1.8.0",
