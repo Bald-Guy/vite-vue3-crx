@@ -1,3 +1,3 @@
 import { useStorageLocal } from '~/composables/useStorageLocal'
 
-export const storageDemo = useStorageLocal('crx-demo', 'Storage Demo')
+export const storageUser = useStorageLocal('user', 'Leo Hunter')

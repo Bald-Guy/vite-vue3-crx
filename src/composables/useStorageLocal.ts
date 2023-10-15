@@ -1,6 +1,22 @@
-export function useStorageLocal(key: string, initialValue: any) {
-  // TODO: implement
-  // eslint-disable-next-line no-console
-  console.log('useStorageLocal', key, initialValue)
+import type { MaybeRef, RemovableRef, StorageLikeAsync, UseStorageAsyncOptions } from '@vueuse/core'
+import {
+  useStorageAsync,
+} from '@vueuse/core'
+
+const storageLocal: StorageLikeAsync = {
+  async getItem(key: string) {
+    return (await chrome.storage.local.get(key))[key]
+  },
+
+  setItem(key: string, value: string) {
+    return chrome.storage.local.set({ [key]: value })
+  },
+
+  removeItem(key: string) {
+    chrome.storage.local.remove(key)
+  },
 }
-// 后续可以参考 antfu 的实现：https://github.com/antfu/vitesse-webext/blob/main/src/composables/useStorageLocal.ts
+
+export function useStorageLocal<T>(key: string, initialValue: MaybeRef<T>, options?: UseStorageAsyncOptions<T>): RemovableRef<T> {
+  return useStorageAsync(key, initialValue, storageLocal, options)
+}
