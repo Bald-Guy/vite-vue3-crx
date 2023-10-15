@@ -31,8 +31,8 @@ export const sharedConfig: UserConfig = {
     }),
 
     Components({
-      resolvers: [IconsResolver({ prefix: '' })],
       dts: r('src/components.d.ts'),
+      resolvers: [IconsResolver({ prefix: '' })],
     }),
 
     Icons({
